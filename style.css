@@ -1,0 +1,100 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f6f7fb;
+}
+
+.container {
+    position: relative;
+    height: 700px;
+    width: 500px;
+    background-image: url("image/bemy-valentine.gif");
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.heart {
+    position: absolute;
+    color: red;
+    font-size: 40px;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+}
+
+.heart.active {
+    animation: animate 0.8s linear forwards;
+}
+.hideheading{
+    display: none;
+}
+
+.hiddenloveyou{
+    display: none;
+}
+.displaylovyou{
+    display: block;
+}
+
+.container.hidecontainer {
+    position: relative;
+    height: 500px;
+    width: 320px;   
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.container.happycontainer {
+    position: relative;
+    height: 550px;
+    width: 800px; 
+    background-image: url("image/doggo-happy.gif");
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes animate {
+    30% {
+        font-size: 80px;
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+        font-size: 60px;
+    }
+
+    70% {
+        font-size: 70px;
+    }
+
+    80% {
+        font-size: 60px;
+        opacity: 1;
+    }
+
+    90% {
+        font-size: 60px;
+        opacity: 1;
+    }
+}
